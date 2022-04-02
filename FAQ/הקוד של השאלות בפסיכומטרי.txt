@@ -1,0 +1,199 @@
+<style>
+    < !-- @import url('https://fonts.googleapis.com/css?family=Assistant'); p, div, ul, lable, h1, h2, h3, h4, h5, h6, button, span { font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ direction: rtl; } html { -webkit-tap-highlight-color: transparent; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ } main { /* position: relative; */ /* background-image: url(https://studio.campus.gov.il/asset-v1:campus+CampusDemoX+2016_T1+type@asset+block@faq__2_.png); */ /* background-repeat: repeat-y; */ /* background-position: right; */ /* background-color: #3CA0AE; */ /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ /* background-color: #3CA0AE; */ } .tableout { border: solid 0px black !important; width: 100%; height: 98px; max-width: 100%; margin-right: center; margin-left: center; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ } .tableout tr { border: solid 0px black !important; /* padding: 0px 20px; */ } .tableout tr td { border: solid 0px black !important; /* padding: 0px 20px; */ } .tablein { border-collapse: separate; border-spacing: 10px; text-align: center; } .tdin { background-color: #ededed; font-size: 16rm; border-color: transparent; padding: 3%; } body { /* background-color: #3CA0AE; */ /* padding: 105px 0; */ /* background-image: url(http://campus.gov.il/wp-content/themes/campus/assets/images/faq.png); */ /* background-repeat: repeat-y; */ /* background-position: right; */ box-sizing: border-box; color: #333333; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ font-size: 1rem; font-weight: 400; line-height: 1.5; } body.rtl { text-align: right; direction: rtl; } .accordion1 { /* background-color: white; color: black; font-weight: 600; cursor: pointer; padding: 18px; width: 100%; max-width: 800px; margin: -10px auto 2px; /* border: none; */ /* text-align: right; outline: none; font-size: 25px; transition: 0.4s; margin-top: 10px; -webkit-box-shadow: 7px 7px 20px 1px rgba(0, 0, 0, 0.3); box-shadow: 7px 7px 20px 1px rgba(0, 0, 0, 0.3); */ width: 100%; max-width: 800px; margin: 4px auto 2px; background: #f2f2f2; border-radius: 4px 4px 0px 0px; cursor: pointer; display: block; padding: 15px 15px 15px 42px; color: #4D4D4D; font-weight: 700; position: relative; -webkit-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease; text-align: right; padding: 18px; border: none; text-align: right; outline: none; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ font-size: 15px; } .accordion1.active, .accordion1:hover { background-color: #6c757d; color: white; } div.panel { padding: 0 18px; background-color: #dbecef; max-height: 0; /* overflow: hidden; */ /* width: 104%; transition: 0.3s ease-in-out; opacity: 0; */ -webkit-transition: all 0.25s ease; -o-transition: all 0.25s ease; transition: all 0.25s ease; opacity: 0; text-align: right; max-width: 800px; margin: auto; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ } div.panel.show { opacity: 1; max-height: 1000px; padding-top: 10px; /* width: 104%; */ background-color: #cbd3da; line-height: 150%; /* text-align: right; */ width: 100%; max-width: 800px; padding: 15px 15px 15px 42px; border-bottom: 2px solid #3CA0AE; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ } .changeall { display: inline-block; width: 81px; height: 30px; background-color: #EDAE49; padding-top: 5px; color: black; font-weight: bold; cursor: pointer; border: none; text-align: center; outline: none; font-size: 18pt; transition: 0.4s; -webkit-border-radius: 40px 40px 40px 40px; border-radius: 40px 40px 40px 40px; -webkit-box-shadow: 7px 7px 20px 1px rgba(0, 0, 0, 0.3); box-shadow: 7px 7px 20px 1px rgba(0, 0, 0, 0.3); font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ } .changeall:hover { background-color: #725935; color: white; } .accplus { /* font-size: 32px; height: 19px; width: 20px; top: calc(50% - 7px); font-weight: 700; background: none; border: none; content: ''; display: block; cursor: pointer; float: left; color: #3CA0AE; transition: all .3s; */ font-size: 20px; font-weight: 600; background: none; border: none; cursor: pointer; float: left; } h3 { color: #393333; font-size: 60px; font-weight: 600; text-align: center; display: block; /* font-size: 1.17em; */ /* margin-block-start: -1em; */ /* margin-block-end: 1em; */ /* margin-inline-start: 74px; */ /* margin-inline-end: 0px; */ /* text-align: center; */ /* font-weight: bold; */ } *, ::after, ::before { box-sizing: border-box; } .h3_td { padding: 0px; margin: 0px; height: 30px; } #myBtn { font-size: 26px; width: 52px; height: 52px; text-align: center; line-height: 50px; position: fixed; bottom: 60px; right: 80px; overflow: hidden; z-index: 1000; background-color: #ffcd03; opacity: 0.85; color: white; border-radius: 35px; background-clip: padding-box; transition: background 0.3s ease-in-out; transition: all 5s; font-family: 'Assistant', sans-serif; /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */ } -->.content-general {<br />        padding-right: 5%;<br />        padding-left: 0%;<br />    }</p>
+<p>    .sidebar-general li a {<br />        FONT-WEIGHT: 800;<br />        font-size: 20px;<br />        font-weight: 600;<br />        color: #ffffff;<br />    }<br />    .td_style {<br />      padding: 0% 0% 3% 0% !important;<br />    }<br />    .style_text {<br />        font-size: 15px;<br />        line-height: 20px;<br />        font-family: 'Assistant', sans-serif;<br />        /* font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma; */<br />    }<br /></style>
+
+<script>// <![CDATA[
+        var changeallcounter = 0;
+        var acc = document.getElementsByClassName("accordion1");
+        var accplus = document.getElementsByClassName("accplus");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function () {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+                if (this.firstElementChild.innerHTML == "+") {
+                    this.firstElementChild.innerHTML = "-";
+                }
+                else {
+                    this.firstElementChild.innerHTML = "+";
+                }
+
+            }
+        }
+
+        function openOrCloseAcc(e) {
+
+            if (e.firstElementChild.innerHTML == "+") {
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].classList.remove("active");
+                    acc[i].nextElementSibling.classList.remove("show");
+                    acc[i].firstElementChild.innerHTML = "+";
+                }
+                e.firstElementChild.innerHTML = "-";
+                e.classList.add("active");
+                e.nextElementSibling.classList.add("show");
+                e.firstElementChild.innerHTML = "-";
+            }
+            else {
+                e.firstElementChild.innerHTML = "+";
+                e.classList.remove("active");
+                e.nextElementSibling.classList.remove("show");
+                e.firstElementChild.innerHTML = "+";
+            }
+
+        }
+
+
+        function openallfunc() {
+            for (i = 0; i < acc.length; i++) {
+
+                acc[i].classList.add("active");
+                acc[i].nextElementSibling.classList.add("show");
+                acc[i].firstElementChild.innerHTML = "-";
+            }
+        }
+
+        function closeallfunc() {
+            for (i = 0; i < acc.length; i++) { acc[i].classList.remove("active"); acc[i].nextElementSibling.classList.remove("show"); acc[i].firstElementChild.innerHTML = "+"; } } // ]]></script>
+<table class="tableout" dir="rtl">
+<tbody>
+<tr style="padding: 0px; margin: 0px; height: 35px;">
+<td style="padding: 0px; margin: 0px; height: 30px;">
+<h3>שאלות נפוצות
+<!-- <span style="font-size: 12pt; font-weight: normal;">לקריאה&nbsp;<b>לחצו</b>
+על כל שאלה.</span> --></h3>
+<!--
+<p class="changeall" onclick="closeallfunc()" style="float: left; margin-left: 41.7%; font-size: 16px; margin-bottom: 4%;">
+                    סגור הכול
+
+<p class="changeall" onclick="openallfunc()" style="margin-left: 30; float: left; font-size: 16px;">פתח
+הכול
+
+--></td>
+</tr>
+<tr>
+<td class="td_style">
+<div class="accordion1">מי עומד מאחורי הקורס?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">זהו הקורס הרשמי של המדינה מטעם מטה ישראל דיגיטלית, בשיתוף המרכז הארצי לבחינות ולהערכה (מאל"ו) - הגוף שמחבר ומעברי את הבחינה הפסיכומטרית, וזה הקורס היחיד בארץ אשר כולל שאלות פסיכומטריות אמיתיות ממבחני עבר. הקורס מועבר על ידי ליאור כהן ואלעד שווייצר - מומחים לבחינה הפסיכומטרית ומחברי ספרי הלימוד של "&lt;a "<a href="http://psycho.co.il/" target="_blank" rel="noopener">פסיכו</a>", עם ותק של כ-20 שנה בתחום.</p>
+
+</div>
+<div class="accordion1">מה כולל הקורס וכמה הוא עולה?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+
+הקורס הוא ללא תשלום והוא מאפשר הכנה מלאה ומקיפה לבחינה הפסיכומטרית. בנוסף, קיים מסלול מתוגבר בעלות של 700 ₪ (פירוט בשאלה הבאה).
+<ul>
+ 	<li><b> תכנית לימוד -</b> כוללת משימות לימוד יומיות בהתאם למשך זמן הלימוד שהגדרתם (איזה שיעורים לראות, מה לתרגל וכו'). ניתן לבחור משך לימוד של חודשיים, שלושה או ארבעה חודשים, ובכל מקרה ניתן להתקדם בתכנית בקצב אישי (מהר או לאט יותר).</li>
+ 	<li><b> שיעורי וידאו - </b> שיעורי לימוד בכל הנושאים, זמינים 24/7 ללא הגבלה.</li>
+ 	<li><b> תרגול - </b> שאלות פסיכומטריות אמיתיות ממבחני עבר בכל הנושאים. ניתן לתרגל באתר או להוריד חינם קובצי PDF של ספרי הקורס. לנוחיותכם, ניתן להזמין את הספרים מודפסים ממערכת ההזמנות במחירי עלות (250 ₪ ל-9 ספרים).</li>
+ 	<li><b> סימולציות - </b> ניתן להוריד חינם קובצי PDF של הסימולציות. לנוחיותכם, ניתן להזמין את סימולציות מודפסות ממערכת ההזמנות (150 ₪ ל-10 סימולציות כולל פתרונות מלאים).</li>
+ 	<li><b> מערכות לימוד - </b> לומדת מילים, ניתוח סימולציות, תרגול חישובים ועוד.</li>
+ 	<li><b> בדיקת חיבורים ממוחשבת - </b> מערכת ייחודית שפותחה על ידי מאל"ו ובודקת חיבורים באופן אוטומטי. נושאי החיבורים שניתן לבדוק מופיעים באזור האישי.</li>
+ 	<li><b> תמיכה ממדריכים - </b> לאורך כל הלימוד ניתן לשאול שאלות ללא הגבלה בדיונים (פורומים) באתר.</li>
+</ul>
+</div>
+<div class="accordion1">מה כולל המסלול המתוגבר?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+
+המסלול המתוגבר נועד לספק מסגרת ותמיכה נוספת, והוא כולל:
+<ul>
+ 	<li>הצטרפות לכיתה עם מדריך אישי</li>
+ 	<li>28 שיעורים כיתתיים אונליין בני שעה (Live במערכת דומה ל-zoom)</li>
+ 	<li>3 שיעורים פרטיים אונליין בני חצי שעה (Live במערכת דומה ל-zoom)</li>
+ 	<li>בדיקת 3 חיבורים</li>
+ 	<li>קבוצת ווטסאפ כיתתית (לניהול שוטף ולהודעות מהמדריך)</li>
+</ul>
+עלות: 700₪
+
+</div>
+<div class="accordion1">איך נרשמים לקורס?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<ul>
+ 	<li><b>רישום לקורס החינמי </b>- לוחצים על הכפתור הירוק הגדול בראש העמוד. אם אתם כבר רשומים ומחוברים לאתר קמפוס IL בכפתור יהיה כתוב "הרשמה לקורס", ואם עדיין לא נרשמתם לאתר קמפוס IL בכפתור יהיה כתוב "הרשמה לקמפוס IL", ורק לאחר הרישום לאתר תחזרו לעמוד זה ולחצו על "הרשמה לקורס". הקורס יופיע באזור האישי שלכם ותוכלו ללחוץ עליו ולעבור לעמוד הקורס.</li>
+ 	<li><b>רישום למסלול המתוגבר</b> - יש להיכנס <a href="https://x.psychometrix.co.il/shop/">למערכת ההזמנות</a> ולהזמין את המסלול המתוגבר. במהלך ההזמנה תוכלו לבחור את הימים והשעות הנוחים לכם, וכן להזמין ספרי לימוד או סימולציות מודפסות (הזמנת הספרים והסימולציות היא לצורך נוחות בלבד - ניתן להוריד חינם מהאתר קובצי PDF שלהם, אולם יש לקחת בחשבון שמדובר באלפי עמודים).</li>
+</ul>
+</div>
+<div class="accordion1">איך מתבצעים השיעורים הכיתתיים הפרטיים (Live) ומתי?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+
+ראשית, חשוב להבין שהשיעורים הכיתתיים והפרטיים זמינים לתלמידי המסלול המתוגבר בלבד. השיעורים הכיתתיים והפרטיים מתבצעים אונליין במערכת כיתה וירטואלית, ויש צורך במצלמה ומיקרופון (אוזניה של טלפון מספיקה). הכיתה הוירטואלית פועלת באתר אינטרנט רגיל - אין צורך בהתקנת תוכנה או אפליקציה מיוחדת.
+<ul>
+ 	<li><b>שיעורים כיתתיים</b> - את הימים והשעות של השיעורים הכיתתיים אתם בוחרים בעת הרישום למסלול המתוגבר במערכת ההזמנות. שימו לב כי מדובר בזמנים קבועים לכל אורך הקורס (למשל, ימים א' + ד' שעות 19:00-20:00).</li>
+ 	<li><b>שיעורים פרטיים</b> - את זמני השיעורים הפרטיים אתם מתאמים מול המדריך האישי שלכם לאחר השיעור הכיתתי הראשון.</li>
+</ul>
+</div>
+<div class="accordion1">מה אפשר להזמין במערכת ההזמנות?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+
+ב<a href="https://x.psychometrix.co.il/shop/">מערכת ההזמנות</a> ניתן להזמין את הפריטים הבאים:
+<ul>
+ 	<li>הרשמה למסלול המתוגבר - 700 ₪.</li>
+ 	<li>ערכת ספרים (9 ספרים) - 250 ₪.</li>
+ 	<li>10 סימולציות עם פתרונות מלאים - 150 ₪.</li>
+ 	<li>בדיקת חיבור - 50 ₪.</li>
+ 	<li>שיעור פרטי נוסף (מעבר ל-3 שמקבלים במסלול המתוגבר) - 70 ₪ לחצי שעה. הזמנת שיעור פרטי אפשרית רק לתלמידים שנרשמו למסלול המתוגבר.</li>
+</ul>
+* עלות משלוח ספרים/סימולציות - 37 ₪ (עדיף להזמין אותם יחד על מנת לא לשלם משלוח כפול).
+
+</div>
+<div class="accordion1">איך מקבלים ספרים וסימולציות?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">התרגול בקורס קיים כתרגול אינטראקטיבי באתר, אולם ניתן גם להוריד חינם את קובצי ה-PDF של הספרים והסימולציות. עם זאת, מכיוון שמדובר באלפי עמודים, ניתן להזמין אותם מ<a href="https://x.psychometrix.co.il/shop/">מערכת ההזמנות</a> במחירי עלות (9 ספרים ב-250 ₪ ו-10 סימולציות עם פתרונות מלאים ב-150 ₪).
+הספרים והסימולציות מגיעים עם שליח עד לבית, עלות המשלוח היא 37 ₪ (עדיף להזמין אותם יחד על מנת לא לשלם משלוח כפול).</p>
+
+</div>
+<div class="accordion1">מה אני עושה אם לא הבנתי משהו?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">מתחת לכל סרטון לכל שאלה יש כפתור "דיון" בו ניתן לשאול שאלות ולקבל מענה מצוות המדריכים. אם נרשמתם למסלול המתוגבר, יש לכם בנוסף לדיונים גם 3 שיעורים פרטיים לאורך הקורס.</p>
+
+</div>
+<div class="accordion1">לכמה זמן הקורס פתוח / האם ניתן לחזור על הקורס שוב?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<ul>
+ 	<li><b>הקורס החינמי</b> - מרגע ההרשמה הקורס החינמי פתוח עבורכם 24/7 ללא הגבלה וניתן ללמוד בו שוב ושוב. עם זאת, ישנם מספר פיצ'רים שעל מנת שיפעלו עליכם לעבור למועד פעיל (למשל, שליחת חיבורים לבדיקה). תוכלו לעבור למועד פעיל באופן עצמאי, באזור האישי בלחצן "עדכן פרטים".</li>
+ 	<li><b>המסלול המתוגבר</b> - הרישום למסלול המתוגבר תקף למועד אחד בלבד. אם תרצו להשתתף בו שוב (שיעורים כיתתיים, שיעורים פרטיים, בדיקת חיבורים) יש להירשם אליו שוב ב<a href="https://x.psychometrix.co.il/shop/">מערכת ההזמנות</a>. שימו לב כי עליכם להירשם שוב עם מייל שונה מזה שנרשמתם למסלול המתוגבר הקודם (אי אפשר להירשם פעמיים למסלול המתוגבר עם אותו מייל).</li>
+</ul>
+</div>
+<div class="accordion1">איך אני יודע אם הקורס מתאים לי?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">זו החלטה אישית של כל אחד, אולם כדאי לדעת שכיום רוב תלמידי הפסיכומטרי בארץ לומדים בקורס של קמפוס, והרוב המכריע של התלמידים אומרים שהלימוד בקורס הרבה יותר נח ממה שחשבו בתחילה, ואף יותר נח מלימוד בכיתה רגילה - מצד אחד יש את היתרונות של לימוד בקצב אישי, ומצד שני יש תמיכה שוטפת ממדריכים וכן את המסלול המתוגבר לאלו שצריכים מסגרת ותמיכה נוספת. בכל מקרה, אם אתם מתלבטים, אתם מוזמנים להתייעץ איתנו - התקשרו 1129 ונשמח לעזור.</p>
+
+</div>
+<div class="accordion1">האם הקורס מתאים למי שניגש לבחינה המשולבת (עברית - אנגלית)?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">בהחלט כן, מדובר באותם תכנים בדיוק. עם זאת, יש לשים לב לשוני בין מבני הפרקים והזמן המוקצב להם בבחינה הרגילה לעומת המשולבת. בתקופת המרתון מומלץ לפתור סימולציות של הבחינה המשולבת מתוך האתר של מאל"ו.</p>
+
+</div>
+<div class="accordion1">האם הקורס מתאים למי שיש לו התאמות למבחן?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">בהחלט כן, הקורס מתאים גם למי שנבחן עם התאמות - מדובר באותן שאלות ובאותן דרכי לימוד. ההבדל היחיד יהיה בסימולציות, אותן יש לבצע לפי הזמנים וההתאמות שיש בבחינה עצמה. למשל, מי שיש לו אישור למחשבון יוכל להשתמש במחשבון גם בסימולציות, ומי שנבחן במפע"ם (מבחן פסיכומטרי על מחשב), צריך לפתור את השאלות בכל פרק לפי הסדר, בלי לדלג ובלי לחזור אחורה, ולעבוד לפי הזמנים של מפע"ם.</p>
+
+</div>
+<div class="accordion1">האם הקורס מתאים להכנה למבחן אמי"ר או אמיר"ם?<span id="myspan" class="accplus">+</span></div>
+<div class="panel">
+<p class="style_text">בהחלט כן, הקורס מתאים להכנה למבחן אמי"ר או אמיר"ם, שהם מבחנים שכוללים רק את חלק האנגלית מהפסיכומטרי (אותן שאלות בדיוק). ניתן ללמוד ולתרגל את הנושאים בתחום האנגלית, וכן להיעזר במילון הקורס שקיים גם בקבצים להורדה, גם כאפליקציה (שם האפליקציה: אקס-קמפוס), וגם באפליקציית קוויזלט.</p>
+
+</div></td>
+</tr>
+</tbody>
+</table>
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+<script>
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script> -->
