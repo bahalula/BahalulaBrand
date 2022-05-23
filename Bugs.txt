@@ -1,2 +1,0 @@
-1. homePage- the elements are not displayed in a proportional way
-2. mySchedule - thete is a missing return-back button
