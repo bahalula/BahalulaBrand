@@ -10,8 +10,9 @@
 }
 
 .flex-item{
-  margin: 1rem 0;
+  margin: 2% 0;
 }
+
 .card {
   border-radius: 120px;
   background-color: #fff;
@@ -45,20 +46,19 @@
 
 .btn-group {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
 }
 
 
 .btn-item:link,
 .btn-item:visited {
-  border-radius: 5px;
+  border-radius: 120px;
   background-color: #afa6be;
   color: white;
-  padding: 14px 25px;
+  padding: 10px 20px;
   text-decoration: none;
+  margin: 1%;
 }
 
 
