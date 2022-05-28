@@ -1,4 +1,4 @@
-.img-view{
+.img-view {
   width: 180px;
   height: 180px;
   margin-top: 1.5rem
@@ -6,27 +6,64 @@
 
 .img-warper-circle {
   box-shadow: 1px 2px 3px rgb(0 0 0 / 20%);
-  border-radius: 50% ;
+  border-radius: 50%;
 }
 
-.header-style{
+.flex-item{
+  margin: 1rem 0;
+}
+.card {
+  border-radius: 120px;
+  background-color: #fff;
+  box-shadow: 5px 2px 3px rgb(0 0 0 / 20%);
+  text-align: center;
+  padding: 0 1.5%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1%;
+  margin: 0 1%;
+}
+
+.title-style {
   font-size: 25px;
   color: #554b70;
   font-family: monospace;
 }
 
-.border-box-container{
-  width: 560px;
+.border-box-container {
+  text-align: center;
+  max-width: 85%;
   border: 2px solid #a092c7;
   padding: 5px 15px;
   border-radius: 50px 20px;
-  margin: 10px auto;
-}
-
-.border-box-txt-style{
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
+  margin: auto;
 }
 
 
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+
+.btn-item:link,
+.btn-item:visited {
+  border-radius: 5px;
+  background-color: #afa6be;
+  color: white;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+
+.btn-item:hover,
+.btn-item:active {
+  background-color: #6d6974;
+  color: #e6e6e6;
+}
