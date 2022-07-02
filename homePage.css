@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 .img-view {
   width: 180px;
   height: 180px;
@@ -43,27 +48,3 @@
   margin: auto;
 }
 
-
-.btn-group {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-.btn-item:link,
-.btn-item:visited {
-  border-radius: 120px;
-  background-color: #afa6be;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  margin: 1%;
-}
-
-
-.btn-item:hover,
-.btn-item:active {
-  background-color: #6d6974;
-  color: #e6e6e6;
-}

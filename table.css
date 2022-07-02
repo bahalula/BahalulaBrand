@@ -1,59 +1,83 @@
-.flex-table {
-    display: flex;
-    flex-direction: column;
- }
 
-.flex-table thead tr,
-.flex-table tbody tr {
-    display: flex;
-}
-
-.flex-table thead tr th,
-.flex-table tbody tr td {
-    display: flex;
-    flex: 1;
-    padding: .5em;
-}
-
-.flex-table tbody tr+tr {
-    border-top: 1px solid #ccc;
-}
-.flex-table thead tr th,
-.flex-table tbody tr td {
-    display: flex;
-    flex: 1;
-    padding: .5em;
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
 }
 
 
- thead th {
-    background: #d18de2;
-    color: #FFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+thead tr {
+  background: -webkit-radial-gradient(#f8f8f8, rgb(226, 177, 202));
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+#small{
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #big{
+    display: none;
   }
 
- 
-  tbody th{
-    color: rgb(54, 0, 0);
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
+  #small{
+    display: inline-grid;
   }
 
-  tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
-    margin-bottom: 5px;
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+      }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
   }
   
-  th, td {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
- 
-    text-align: left;
- 
-  }  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  tr th{
+    display: inline-block;
+  }
+  /*  attr(data-lable) inserts a specified attribute's (data lable -> heders) value before the selected element  */
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+

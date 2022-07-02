@@ -2,84 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="/mySchedule.css">
-    <link rel="stylesheet" href="/table.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rubik:wght@300&display=swap"
-        rel="stylesheet">
-    <title>My Schedule</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="/mySchedule.css">
+  <link rel="stylesheet" href="/table.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rubik:wght@300&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cf35074b80.js" crossorigin="anonymous"></script>
+  <title>My Schedule</title>
 </head>
 
 <body>
-       <table class="flex-table">
-        <caption>My Weekly Schecule</caption>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th scope="col">Sunday</th>
-                <th scope="col">Monday</th>
-                <th scope="col">Tuesday </th>
-                <th scope="col">Wednesday</th>
-                <th scope="col">Thursday</th>
-                <th scope="col">Friday</th>
-                <th scope="col">Saturday</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">09:00-10:00</th>
-                <td>let students send feadback to each other</td>
-                <td>Characterization</td>
-                <td>2023</td>
-                <td></td>
-                <td>Day off</td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr>
-                    <th scope="row">11:00-12:00</th>
-                    <td>Xblock</td>
-                    <td>Dashboard for instructor which shows students grading </td>
-                    <td>Characterization</td>
-                    <td>2023</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-            </tr>
 
-            <tr >
-                <th scope="row">13:00-14:00</th>
-                <td>Xblock</td>
-                <td>Dashboard for instructor which shows students grading </td>
-                <td>Characterization</td>
-                <td>2023</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr>
-                <th scope="row">15:00-16:00</th>
-                <td>Xblock</td>
-                <td>Dashboard for instructor which shows students grading </td>
-                <td>Characterization</td>
-                <td>2023</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-
-    </table>
-    <div class="btn-group"> 
-        <a href="/homePage.html" target="_blank" class="btn-item" >Return Home Page</a>
+  <div class="grid-container">
+    <div class="grid-item-1">
+      <h1>My Weekly Schecule</h1>
     </div>
+    <div class="grid-item-2"> left side</div>
+    <div class="grid-item-3">
+      <div>
+        <table id="big">
+          <thead>
+            <!-- Headers -->
+            <th></th>
+            <th scope="col">Sunday</th>
+            <th scope="col">Monday</th>
+            <th scope="col">Tuesday</th>
+            <th scope="col">Wednesday</th>
+            <th scope="col">Thursday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- First Row -->
+            <tr>
+              <th scope="row">09:00-17:00</th>
+              <td data-label="Sunday">At Work</td>
+              <td data-label="Monday"> At Work</td>
+              <td data-label="Tuesday">At Work</td>
+              <td data-label="Wednesday">At Work</td>
+              <td data-label="Thursday">At Work</td>
+            </tr>
+            <!-- Second Row -->
+            <tr>
+              <th scope="row">17:00-18:00</th>
+              <td data-label="Sunday">Resting Time</td>
+              <td data-label="Monday"> Resting Time</td>
+              <td data-label="Tuesday">Resting Time</td>
+              <td data-label="Wednesday">Resting Time</td>
+              <td data-label="Thursday">Resting Time</td>
+            </tr>
+            <!-- Forth Row -->
+            <tr>
+              <th scope="row">18:00-21:00</th>
+              <td data-label="Sunday">CrossFit Session</td>
+              <td data-label="Monday">SheCode Time</td>
+              <td data-label="Tuesday">CrossFit Session</td>
+              <td data-label="Wednesday">SheCode Time</td>
+              <td data-label="Thursday">SheCode Time</td>
+            </tr>
+            <!-- Fivw Row -->
+            <tr>
+              <th scope="row">21:00-22:00</th>
+              <td data-label="Sunday">Family Time</td>
+              <td data-label="Monday">Family Time</td>
+              <td data-label="Tuesday">Family Time</td>
+              <td data-label="Wednesday">Family Time</td>
+              <td data-label="Thursday">Family Time</td>
+            </tr>
+          </tbody>
+        </table>
+        <table id="small">
+          <tbody>
+            <!-- First block -->
+            <tr>
+              <th scope="col">Sunday</th>
+              <td data-label="09:00-17:00">At Work</td>
+              <td data-label="17:00-18:00">Resing Time</td>
+              <td data-label="18:00-21:00">CrossFit Session</td>
+              <td data-label="21:00-22:00">Family Time</td>
+            </tr>
+            <!-- Second block -->
+            <tr>
+              <th scope="col">Monday</th>
+              <td data-label="09:00-17:00">At Work</td>
+              <td data-label="17:00-18:00">Resting Time Time</td>
+              <td data-label="18:00-21:00">SheCode Time</td>
+              <td data-label="21:00-22:00">Family Time</td>
+            </tr>
+            <!-- Forth block -->
+            <tr>
+              <th scope="col">Tuesday</th>
+              <td data-label="09:00-17:00">At Work</td>
+              <td data-label="17:00-18:00">Resting Time Time</td>
+              <td data-label="18:00-21:00">CrossFit Session</td>
+              <td data-label="21:00-22:00">Family Time </td>
+            </tr>
+            <!-- Five block -->
+            <tr>
+              <th scope="col">Wednesday</th>
+              <td data-label="09:00-17:00">At Work</td>
+              <td data-label="17:00-18:00">Resting Time Time</td>
+              <td data-label="18:00-21:00">SheCode Time</td>
+              <td data-label="21:00-22:00">Family Time </td>
+            </tr>
+            <!-- Six block -->
+            <tr>
+              <th scope="col">Thursday</th>
+              <td data-label="09:00-17:00">At Work</td>
+              <td data-label="17:00-18:00">Resting Time Time</td>
+              <td data-label="18:00-21:00">SheCode Time</td>
+              <td data-label="21:00-22:00">Family Time </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="grid-item-4"> right side</div>
+    <div class="grid-item-5">
+      <div class="flex-item">
+        <a href="/homePage.html" target="_self" class="btn-item">Return Home Page</a>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 
 </html>

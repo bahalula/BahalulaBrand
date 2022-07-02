@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/mySchedule.css">
+    <link rel="stylesheet" href="/table.css">
+    <link rel="stylesheet" href="/main.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rubik:wght@300&display=swap"
@@ -14,31 +18,47 @@
 </head>
 
 <body>
-    <table>
-        <caption>Upcoming Projects</caption>
-        <thead>
-            <tr>
-                <th>Project Name</th>
-                <th>Details</th>
-                <th>Status</th>
-                <th>Deadline</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Xblock</th>
-                <td>let students send feadback to each other</td>
-                <td>Characterization</td>
-                <td>2023</td>
-            <tr>
-                <th>Xblock</th>
-                <td>Dashboard for instructor which shows students grading </td>
-                <td>Characterization</td>
-                <td>2023</td>
-            </tr>
-        </tbody>
+    <div class="grid-container">
+        <div class="grid-item-1">
+          <h1>Upcoming Projects</h1>
+        </div>
+        <div class="grid-item-2"> left side</div>
+        <div class="grid-item-3">
+          <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Details</th>
+                        <th>Status</th>
+                        <th>Deadline</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Xblock</th>
+                        <td>let students send feadback to each other</td>
+                        <td>Characterization</td>
+                        <td>2023</td>
+                    <tr>
+                        <th>Xblock</th>
+                        <td>Dashboard for instructor which shows students grading </td>
+                        <td>Characterization</td>
+                        <td>2023</td>
+                    </tr>
+                </tbody>
+        
+            </table>
+          </div>
+        </div>
+        <div class="grid-item-4"> right side</div>
+        <div class="grid-item-5">
+          <div class="flex-item">
+            <a href="/homePage.html" target="_self" class="btn-item">Return Home Page</a>
+          </div>
+        </div>
+      </div>
 
-    </table>
 </body>
 
 </html>
