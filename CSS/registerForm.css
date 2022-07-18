@@ -227,7 +227,7 @@ form .button {
 }
 
 
-form .button input {
+form .button input{
     font-family: 'Finlandica', sans-serif;
     height: 100%;
     width: 100%;
@@ -243,9 +243,17 @@ form .button input {
 }
 
 
+
+
 form .button input:hover {
     transform: scale(0.99);
     background: linear-gradient(-135deg, #512253, #6d428a);
+}
+
+.return{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 @media (max-width: 584px) {
