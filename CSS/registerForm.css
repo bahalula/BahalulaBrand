@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600&display=swap');
+
+* {
+
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Finlandica', sans-serif;
+    height: 100vh;
+}
+
+.flex-item>h1 {
+    padding: 20px;
+    text-align: center;
+    background: #512253;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+
+.from-container {
+    width: 750px;
+    max-width: 85%;
+    padding: 2rem 1.8rem 2.5rem 1.8rem;
+    background: #ffff;
+    border-radius: 25px;
+}
+
+.from-container .form-title {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.from-container>.form-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #512253, #6d428a);
+}
+
+form {
+    padding-top: 1rem;
+}
+
+.from-container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 5px 0;
+}
+
+form .user-details .input-box,
+form .user-details .contact-details,
+form .user-details .consulting-details {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 10px;
+}
+
+.user-details .input-box .details {
+    display: inline-block;
+    font-weight: 600;
+    color: #811c89;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    margin-top: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box .simple-input {
+    height: 30px;
+    width: 100%;
+}
+
+.user-details .input-box .data-input {
+    height: 50px;
+    width: 100%;
+}
+
+.user-details .input-box .input:focus,
+.user-details .input-box .input:valid {
+    border-color: #9476a8;
+
+}
+
+/* custom radio --> */
+form input[type="radio"] {
+    display: none;
+}
+
+.contact-details .contact-title {
+    color: #811c89;
+    font-weight: 600;
+}
+
+.contact-details .category {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 6px 0;
+}
+
+.contact-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+/* custom rasio  */
+.contact-details .category .dot {
+    margin: 5px;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #ccc;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+
+/* show the checkmark when not checked */
+#dot-1:hover~.category label .one,
+#dot-2:hover~.category label .two {
+    background: #a19f9f;
+}
+
+/* show the checkmark when checked */
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two {
+    background: #9b59b6;
+    border-color: #d9d9d9;
+}
+
+/* custom radio end */
+
+/* =========------------------========== */
+
+
+/* custom checkmark --> */
+
+form input[type="checkbox"] {
+    display: none;
+}
+
+.consulting-details .consulting-item-title {
+    color: #811c89;
+    font-weight: 600;
+}
+
+.consulting-details .consulting-item {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 6px 0;
+}
+
+.consulting-details .consulting-item label {
+    display: flex;
+    align-items: center;
+}
+
+/* create custom checkmark */
+.consulting-details .consulting-item .checkmark {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 15%;
+    margin: 5px;
+    background: #ccc;
+    transition: all 0.3s ease;
+
+}
+
+/* show the checkmark when not checked */
+#checkmark-1:hover~.consulting-item label .one,
+#checkmark-2:hover~.consulting-item label .two,
+#checkmark-3:hover~.consulting-item label .three {
+    background: #a19f9f;
+}
+
+/* show the rasio when checked */
+#checkmark-1:checked~.consulting-item label .one,
+#checkmark-2:checked~.consulting-item label .two,
+#checkmark-3:checked~.consulting-item label .three {
+    background-color: #9b59b6;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+#checkmark-1:checked~.consulting-item label .one::after,
+#checkmark-2:checked~.consulting-item label .two::after,
+#checkmark-3:checked~.consulting-item label .three::after {
+    display: flex;
+    justify-content: center;
+    color: #d9d9d9;
+}
+
+.checkmark:after {
+    content: '\2714';
+    font-size: 10px;
+    display: none;
+}
+
+/* coustom checkmark end */
+/* =========------------------========== */
+
+form .button {
+    height: 45px;
+    margin: 35px 0;
+    width: 100%;
+}
+
+
+form .button input {
+    font-family: 'Finlandica', sans-serif;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #512253, #6d428a)
+}
+
+
+form .button input:hover {
+    transform: scale(0.99);
+    background: linear-gradient(-135deg, #512253, #6d428a);
+}
+
+@media (max-width: 584px) {
+
+    form{
+        padding-top: 0;
+    }
+    .from-container {
+        max-width: 100%;
+    }
+
+    form .user-details .input-box,
+    form .user-details .contact-details,
+    form .user-details .consulting-details {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .from-container form .user-details {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 5px;
+    }
+}
+

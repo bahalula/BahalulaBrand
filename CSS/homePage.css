@@ -15,7 +15,7 @@ body {
 }
 
 .flex-item{
-  margin: 2% 0;
+  padding-top: 1.1em;
 }
 
 .card {
@@ -47,4 +47,5 @@ body {
   border-radius: 50px 20px;
   margin: auto;
 }
+
 

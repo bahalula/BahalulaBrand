@@ -25,17 +25,13 @@ body {
   font-family: 'Rubik', sans-serif;
   background-color: #80759e;
   color: white;
-  }
+}
 
 .footer-style>* {
   margin: 5px;
 }
 
-.footer-style a,
-.grid-item a {
-  text-decoration: none;
-  color: white;
-}
+
 
 .footer-style>a:hover {
   color: #f4c0c2;
@@ -53,7 +49,6 @@ body {
 .btn-item:visited {
   border-radius: 120px;
   background: -webkit-radial-gradient(#afa6be, rgb(108, 70, 129));
-  /* background-color: #afa6be; */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -63,28 +58,25 @@ body {
 
 .btn-item:hover,
 .btn-item:active {
-  /* background-color: #6d6974; */
   background: -webkit-radial-gradient(#b7acc9, #6d6974);
-
   color: #e6e6e6;
 }
 
+@media (min-width:320px) and (max-width:600px) {
 
-@media (min-width:375px) and (max-width:600px) {
   .btn-item:link,
   .btn-item:visited {
-      flex-basis: min-content;
+    flex-basis: min-content;
   }
 
+  .btn-group {
+    display: inline-grid;
+  }
 }
-  
   @media (min-width:750px) {
-      .btn-item:link,
-      .btn-item:visited {
-          font-size: 113%;
-      }
-   }
 
-
-
-/* d */
+    .btn-item:link,
+    .btn-item:visited {
+      font-size: 113%;
+    }
+  }

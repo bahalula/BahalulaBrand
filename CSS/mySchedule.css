@@ -41,13 +41,18 @@
       margin-bottom: 3px;
     }
 
-   
+    .footer-style a,
+    .grid-item a {
+      text-decoration: none;
+      color: white;
+    }
+    
     @media (max-width: 1000px) {
       .grid-container {
         grid-template-rows: 0fr 0fr 0fr;
       }
 
-      .flex-item{
+      .grid-item{
         margin: 0.7em 0;
       }
    
