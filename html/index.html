@@ -2,22 +2,31 @@
 <html lang="en">
 
 <head>
-    <title>Home Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/CSS/homePage.css">
-    <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Rubik:wght@300&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/GenericTemplate.css">
     <script src="https://kit.fontawesome.com/cf35074b80.js" crossorigin="anonymous"></script>
+    <title>Home Page</title>
 </head>
 
 <body>
+    <nav>
+        <div class="logo">Brand</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/html/index.html">Home</a></li>
+            <li><a href="/html/myProjects.html">Incomming Projects</a></li>
+            <li><a href="/html/mySchedule.html">Projects Schedule</a></li>
+            <li><a href="/html/registerForm.html">Contact</a></li>
+        </ul>
+    </nav>
     <div class="main-container">
         <div class="card-container card">
-
             <div class="flex-item">
                 <img class="img-warper-circle img-view" src="/photos/profile_pic.jpg" alt="Eden Bahalul">
                 <div class="title-style">
@@ -36,14 +45,6 @@
                     learning experience.
                 </p>
             </div>
-
-            <div class="flex-item btn-group">
-                <a href="/html/mySchedule.html" target="_self" class="btn-item">View My Scheduale</a>
-                <a href="/html/myProjects.html" target="_self" class="btn-item">Incoming Projects</a>
-                <a href="/html/registerForm.html" target="_self" class="btn-item">Contact Me</a>
-
-            </div>
-
         </div>
     </div>
 

@@ -5,113 +5,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/main.css">
+    <link rel="stylesheet" href="/CSS/GenericTemplate.css">
     <link rel="stylesheet" href="/CSS/registerForm.css">
     <script src="https://kit.fontawesome.com/cf35074b80.js" crossorigin="anonymous"></script>
     <title>Contact Me</title>
 
-    <div class="from-container">
-        <div class="return">
-            <a href="/html/homePage.html" target="_self" class="btn-item">Return</a>
+<body>
+    <nav>
+        <div class="logo">Brand</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/html/index.html">Home</a></li>
+            <li><a href="/html/myProjects.html">Incomming Projects</a></li>
+            <li><a href="/html/mySchedule.html">Projects Schedule</a></li>
+            <li><a href="/html/registerForm.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="main-container"> 
+        <div class="from-container">
+            <div class="form-title">Registration Request</div>
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">
+                            Full Name:
+                        </span> <br />
+                        <input class="simple-input" type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">
+                            Email:
+                        </span> <br />
+                        <input class="simple-input" type="email" placeholder="example@email.com" id="email" name="email"
+                            required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">
+                            Phone Number:
+                        </span> <br />
+                        <input type="tel" class="simple-input" name="phone" placeholder="05x-xxx-xxx"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </div>
+
+                    <div class="contact-details">
+                        <input type="radio" name="channel" id="dot-1">
+                        <input type="radio" name="channel" id="dot-2">
+                        <span class="contact-title">Please select your preferred contact channel:</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span>Email</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span>Phone-Call</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="consulting-details">
+                        <input type="checkbox" id="checkmark-1" name="UX/UI">
+                        <input type="checkbox" id="checkmark-2" name="Developer">
+                        <input type="checkbox" id="checkmark-3" name="ProjectM">
+                        <span class="consulting-item-title"> Which consulting field do you think will help you promote your
+                            idea?</span>
+                        <div class="consulting-item">
+                            <label for="checkmark-1">
+                                <span class="checkmark one"></span>
+                                <span>UX/UI Designer</span>
+                            </label>
+                            <label for="checkmark-2">
+                                <span class="checkmark two"></span>
+                                <span>Developer</span>
+                            </label>
+                            <label for="checkmark-3">
+                                <span class="checkmark three"></span>
+                                <span>Project Manger</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">
+                            Please add short description:
+                        </span> <br />
+                        <textarea class="data-input" name="data-input" minlength="10" maxlength="50"
+                            placeholder="Explain your need" required></textarea>
+                    </div>
+                    <div class="input-box">
+                        <label class="details" for="start">Start date:
+                        </label><br />
+                        <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01"
+                            max="2018-12-31">
+                    </div>
+                    <div class="input-box">
+                        <label class="details" for="start">Final date:
+                        </label><br />
+                        <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01"
+                            max="2018-12-31">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Send Request">
+                    </div>
+
+                </div>
+
+            </form>
         </div>
-        <div class="form-title">Registration Request</div>
-        <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">
-                        Full Name:
-                    </span> <br />
-                    <input class=" input simple-input" type="text" placeholder="Full Name" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">
-                        Email:
-                    </span> <br />
-                    <input class="input simple-input" type="email" placeholder="example@email.com" id="email"
-                        name="email" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">
-                        Phone Number:
-                    </span> <br />
-                    <input type="tel" class=" input simple-input" name="phone" placeholder="05x-xxx-xxx"
-                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
-                </div>
-
-                <div class="contact-details">
-                    <input type="radio" name="channel" id="dot-1">
-                    <input type="radio" name="channel" id="dot-2">
-                    <span class="contact-title">Please select your preferred contact channel:</span>
-                    <div class="category">
-                        <label for="dot-1">
-                            <span class="dot one"></span>
-                            <span>Email</span>
-                        </label>
-                        <label for="dot-2">
-                            <span class="dot two"></span>
-                            <span>Phone-Call</span>
-                        </label>
-                    </div>
-                </div>
-
-                <div class="consulting-details">
-                    <input type="checkbox" id="checkmark-1" name="UX/UI">
-                    <input type="checkbox" id="checkmark-2" name="Developer">
-                    <input type="checkbox" id="checkmark-3" name="ProjectM">
-                    <span class="consulting-item-title"> Which consulting field do you think will help you promote your
-                        idea?</span>
-                    <div class="consulting-item">
-                        <label for="checkmark-1">
-                            <span class="checkmark one"></span>
-                            <span>UX/UI Designer</span>
-                        </label>
-                        <label for="checkmark-2">
-                            <span class="checkmark two"></span>
-                            <span>Developer</span>
-                        </label>
-                        <label for="checkmark-3">
-                            <span class="checkmark three"></span>
-                            <span>Project Manger</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="input-box">
-                    <span class="details">
-                        Please add short description:
-                    </span> <br />
-                    <textarea class="input data-input" name="data-input" minlength="10" maxlength="50"
-                        placeholder="Explain your need" required></textarea>
-                </div>
-                <div class="input-box">
-                    <label class="details" for="start">Start date:
-                    </label><br />
-                    <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01"
-                        max="2018-12-31">
-                </div>
-                <div class="input-box">
-                    <label class="details" for="start">Final date:
-                    </label><br />
-                    <input type="date" id="start" name="trip-start" value="2022-07-22" min="2022-01-01"
-                        max="2018-12-31">
-                </div>
-                <div class="button">
-                    <input type="submit" value="Send Request">
-                </div>
-
-            </div>
-
-        </form>
     </div>
-        
     <div class="footer-style">
         <i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/edenbahalul/"
             target="_blank">Linkedin</a>
         <i class="fa-solid fa-envelope"></i> <a href="mailto:eden.bahalul@gmail.com"> Email</a>
         <i class="fa-brands fa-github"></i> <a href="https://github.com/bahalula" target="_blank"> Github</a>
     </div>
-</head>
+    </head>
 
-<body>
 
 </body>
 
