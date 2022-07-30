@@ -10,7 +10,7 @@ table {
 
 
 thead tr {
-  background: -webkit-radial-gradient(#f8f8f8, rgb(226, 177, 202));
+  background: -webkit-radial-gradient(#f8f8f8, #a092c7);
 }
 
 table tr {
@@ -27,6 +27,7 @@ table td {
 
 table th {
   font-size: .85em;
+  color: #512253;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
@@ -36,12 +37,15 @@ table th {
 }
 
 @media (max-width: 1000px) {
-  #big{
+  #big-table{
     display: none;
   }
 
-  #small{
-    display: inline-grid;
+  #small-table{
+    display: grid;
+    max-height: 555px;
+    overflow-y: scroll;
+    margin: 20px 0;
   }
 
   table {
@@ -54,6 +58,8 @@ table th {
   
   table tr {
     border-bottom: 3px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 2px 3px rgb(0 0 0 / 20%);
     display: block;
     margin-bottom: .625em;
   }
@@ -62,7 +68,7 @@ table th {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
-    text-align: right;
+    text-align: left;
   }
   
   tr th{

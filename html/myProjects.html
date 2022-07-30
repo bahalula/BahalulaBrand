@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/GenericTemplate.css">
     <link rel="stylesheet" href="/CSS/mySchedule.css">
     <link rel="stylesheet" href="/CSS/table.css">
-    <link rel="stylesheet" href="/CSS/GenericTemplate.css">
-
-
+    <script src="https://kit.fontawesome.com/cf35074b80.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Rubik:wght@300&display=swap"
@@ -18,47 +17,60 @@
 </head>
 
 <body>
+    <nav>
+        <div class="logo">Brand</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="active" href="/html/index.html">Home</a></li>
+            <li><a href="/html/myProjects.html">Incomming Projects</a></li>
+            <li><a href="/html/mySchedule.html">Projects Schedule</a></li>
+            <li><a href="/html/registerForm.html">Contact</a></li>
+        </ul>
+    </nav>
     <div class="grid-container">
         <div class="grid-item-1">
-          <h1>Upcoming Projects</h1>
+            <h1>Upcoming Projects</h1>
         </div>
-        <div class="grid-item-2"> left side</div>
         <div class="grid-item-3">
-          <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Project Name</th>
-                        <th>Details</th>
-                        <th>Status</th>
-                        <th>Deadline</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>Xblock</th>
-                        <td>let students send feadback to each other</td>
-                        <td>Characterization</td>
-                        <td>2023</td>
-                    <tr>
-                        <th>Xblock</th>
-                        <td>Dashboard for instructor which shows students grading </td>
-                        <td>Characterization</td>
-                        <td>2023</td>
-                    </tr>
-                </tbody>
-        
-            </table>
-          </div>
-        </div>
-        <div class="grid-item-4"> right side</div>
-        <div class="grid-item-5">
-          <div class="grid-item">
-            <a href="/html/index.html" target="_self" class="btn-item">Return Home Page</a>
-          </div>
-        </div>
-      </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Project Name</th>
+                            <th>Details</th>
+                            <th>Status</th>
+                            <th>Deadline</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Recipe site</th>
+                            <td>to gather my whole recipes in one place, which will be easy to use for those who want to use </td>
+                            <td>Characterization</td>
+                            <td>2023</td>
+                        <tr>
+                            <th>Xblock</th>
+                            <td>Dashboard for instructor which shows students grading </td>
+                            <td>Characterization</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
 
+                </table>
+            </div>
+        </div>
+        <div class="grid-item-5">
+            <div class="footer-style">
+              <i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/edenbahalul/"
+                target="_blank">Linkedin</a>
+              <i class="fa-solid fa-envelope"></i> <a href="mailto:eden.bahalul@gmail.com"> Email</a>
+              <i class="fa-brands fa-github"></i> <a href="https://github.com/bahalula" target="_blank"> Github</a>
+            </div>
+          </div>
+    </div>
 </body>
 
 </html>

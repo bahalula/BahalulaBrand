@@ -21,14 +21,6 @@
     font-weight: 600;
 }
 
-.flex-item>h1 {
-    padding: 20px;
-    text-align: center;
-    background: #512253;
-    color: white;
-    font-size: 30px;
-    width: 100%;
-}
 
 .from-container>.form-title::before {
     content: "";

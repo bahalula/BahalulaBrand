@@ -1,16 +1,11 @@
 .img-view {
   width: 180px;
   height: 180px;
-  margin-top: 1.5rem
 }
 
 .img-warper-circle {
   box-shadow: 1px 2px 3px rgb(0 0 0 / 20%);
   border-radius: 50%;
-}
-
-.flex-item {
-  margin: 1px 0;
 }
 
 .card {
